@@ -8,6 +8,7 @@
   <meta name="description" content="[원하는 동화 내용으로 AI가 생성해줍니다.]" />
   <!-- ⬆⬆⬆ 본인 정보로 교체 ⬆⬆⬆ -->
   <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
 </head>
 <body>
 
@@ -44,32 +45,11 @@
       </div>
     </section>
 
-    <!-- ============ Tech Stack ============ -->
-    <section class="stack-section">
-      <h2>🛠 Tech Stack</h2>
-      <!-- ⬇⬇⬇ 본인 프로젝트가 실제로 쓴 기술로 교체 ⬇⬇⬇ -->
-      <ul class="stack">
-        <li>[FE]React</li>
-        <li>[BE]Express.js OR Spring Boot</li>
-        <li>[DB]MariaDB</li>
-        <li>Cloudflare</li>
-        <li>Docker</li>
-        <li>Oracle Always Free</li>
-        <li>GitHub Actions</li>
-      </ul>
-      <!-- ⬆⬆⬆ 본인 프로젝트가 실제로 쓴 기술로 교체 ⬆⬆⬆ -->
-    </section>
-
-    <!-- ============ 어떻게 만들었나 ============ -->
-    <section class="howto">
-      <h2>🧠 어떻게 만들었나</h2>
-      <!-- ⬇⬇⬇ 본인 프로젝트 설명 3줄로 교체 ⬇⬇⬇ -->
-      <p>
-        원하는 동화의 주제나 스토리를 입력하면 AI가 자동으로 완성된 동화 콘텐츠를 생성해주는 플랫폼입니다.
-        OpenAI GPT / Claude 등의 LLM으로 스토리라인을 작성하고, Image Generation API로 삽화를 생성하며, TTS(Text-to-Speech)를 활용해 음성 나레이션을 자동으로 생성합니다.
-        사용자는 원하는 동화의 주제만 입력하면 이야기, 삽화, 음성이 완벽하게 갖춰진 완성된 동화를 UI에서 바로 볼 수 있습니다.
-      </p>
-      <!-- ⬆⬆⬆ 본인 프로젝트 설명 3줄로 교체 ⬆⬆⬆ -->
+    <!-- ============ 본문 (contents.md 인라인 렌더) ============ -->
+    <section class="content">
+      <!-- ⬇⬇⬇ 같은 폴더의 contents.md 를 수정하면 자동 반영 ⬇⬇⬇ -->
+      <zero-md src="./contents.md" no-shadow></zero-md>
+      <!-- ⬆⬆⬆ 같은 폴더의 contents.md 를 수정하면 자동 반영 ⬆⬆⬆ -->
     </section>
 
     <!-- ============ Giscus 댓글 (8장에서 추가) ============ -->
