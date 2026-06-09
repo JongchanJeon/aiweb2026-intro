@@ -9,6 +9,7 @@
   <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
 </head>
 <body>
+  <a class="skip-link" href="#project-content">본문으로 이동</a>
 
   <!-- ============ HERO ============ -->
   <header class="hero">
@@ -21,28 +22,32 @@
   <main class="container">
 
     <!-- ============ 데모 카드 ============ -->
-    <section class="demo-card">
-      <img class="screenshot" src="./pic/donghwanara.png" alt="동화나라 데모 화면" />
-
-      <div class="project-points" aria-label="프로젝트 핵심 정보">
-        <span>React + Spring Boot</span>
-        <span>OpenAI gpt-5.2</span>
-        <span>Ubuntu + MariaDB</span>
+    <section class="demo-card" aria-label="동화나라 데모와 바로가기">
+      <div class="screenshot-frame">
+        <img class="screenshot" src="./pic/donghwanara.png" alt="동화나라 데모 화면" decoding="async" />
       </div>
 
-      <div class="cta">
-        <a class="btn btn-primary" href="http://168.110.120.182/" aria-disabled="false" title="작성 중">
-          ▶ Live Demo <span class="badge">Ubuntu Server</span>
-        </a>
+      <div class="demo-actions">
+        <div class="cta">
+          <a class="btn btn-primary" href="http://168.110.120.182/" aria-disabled="false" title="Live Demo 열기">
+            ▶ Live Demo <span class="badge">Ubuntu Server</span>
+          </a>
 
-        <a class="btn btn-secondary" href="https://github.com/JongchanJeon/aiweb2026-intro" target="_blank" rel="noopener">
-          ⌨ Source on GitHub
-        </a>
+          <a class="btn btn-secondary" href="https://github.com/JongchanJeon/aiweb2026-intro" target="_blank" rel="noopener">
+            ⌨ Source on GitHub
+          </a>
+        </div>
+
+        <div class="project-points" aria-label="프로젝트 핵심 정보">
+          <span>React + Spring Boot</span>
+          <span>OpenAI gpt-5.4-mini</span>
+          <span>Ubuntu + MariaDB</span>
+        </div>
       </div>
     </section>
 
     <!-- ============ 본문 (contents.md 인라인 렌더) ============ -->
-    <section class="content">
+    <section id="project-content" class="content">
       <!-- ⬇⬇⬇ 같은 폴더의 contents.md 를 수정하면 자동 반영 ⬇⬇⬇ -->
       <zero-md src="./contents.md" no-shadow></zero-md>
       <!-- ⬆⬆⬆ 같은 폴더의 contents.md 를 수정하면 자동 반영 ⬆⬆⬆ -->
